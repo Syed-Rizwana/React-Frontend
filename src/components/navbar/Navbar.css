@@ -1,0 +1,87 @@
+/* Basic styles for navbar */
+.navbar {
+  background-color: #6270eb;
+  padding: 15px;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #6270eb;
+  min-width: 150px;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Other styles remain the same */
+
+.dropdown-content li {
+  padding: 10px;
+  list-style: none; /* Removes default list style */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center; /* Center items vertically for smaller screens */
+  }
+
+  .nav-list li {
+    margin: 5px 0; /* Adjust margin for smaller screens */
+  }
+
+  .dropdown-content {
+    position: static; /* Change the dropdown position */
+    background-color: #6270eb;
+  }
+
+  .dropdown {
+    position: static; /* Change position for smaller screens */
+    text-align: center; /* Center text for smaller screens */
+  }
+}

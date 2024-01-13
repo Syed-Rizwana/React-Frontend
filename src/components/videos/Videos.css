@@ -1,0 +1,66 @@
+/* HomePage.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Homepage Container */
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Hero Section Styles */
+  .hero-section {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  /* Feature Section Styles */
+  .feature-section {
+    text-align: center;
+  }
+  
+  .feature-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .feature-section li {
+    margin: 10px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Carousel Container Styles */
+  .carousel-container {
+    max-width: 800px;
+    margin-top: 50px;
+  }
+  
+  /* Carousel Image Styles */
+  .carousel-container .carousel .slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  /* Carousel Caption Styles */
+  .carousel-container .carousel .legend {
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
